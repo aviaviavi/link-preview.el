@@ -9,3 +9,6 @@ To use:
 3. Run (lp/expand-link-at-cursor)
 4. OG title and description will be inserted below
 
+
+#+CAPTION: Demo tweet expansion
+[[https://i.imgur.com/Wljmh4u.gif]]
