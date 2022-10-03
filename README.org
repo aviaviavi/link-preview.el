@@ -1,0 +1,12 @@
+#+title: link-preview.el
+
+Insert link previews in emacs
+
+To use:
+
+1. Move your cursor to a link
+2. Run (lp/expand-link-at-cursor)
+3. OG title and description will be inserted below
+
+* License
+  MIT
