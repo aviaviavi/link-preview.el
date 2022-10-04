@@ -4,7 +4,7 @@ Insert link previews in emacs
 
 To use:
 
-1. Get an API key for peekalink.io and set ~PEEKALINK_API_KEY~ in your environment
+1. Get an API key for [[https://peekalink.io]] and set ~PEEKALINK_API_KEY~ in your environment
 2. Move your cursor to a link
 3. Run ~(lp/expand-link-at-cursor)~
 4. OG title and description will be inserted below
