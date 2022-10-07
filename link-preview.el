@@ -4,7 +4,11 @@
 ;; Author: Avi Press <mail@avi.press>
 ;; Version: 1.0
 ;; URL: https://github.com/aviaviavi/link-preview.el
-;; Package-Requires: ((request "20210816.200"))
+;; Package-Requires: ((request "0.3.2"))
+
+;;; Commentary:
+
+;; This somewhat hacky code can be polished if it proves useful enough to people
 
 ;;; Code:
 
