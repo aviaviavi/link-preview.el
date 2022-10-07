@@ -6,10 +6,6 @@
 ;; URL: https://github.com/aviaviavi/link-preview.el
 ;; Package-Requires: ((request "20210816.200"))
 
-;;; Commentary:
-
-;; Full documentation is available as an Info manual.
-
 ;;; Code:
 
 (require 'json)
@@ -34,9 +30,13 @@
                   (message "%S" (assoc-default 'description data))
                   (end-of-line)
                   (forward-line 1)
+                  (insert "#+begin_preview")
+                  (newline-and-indent)
                   (insert (assoc-default 'title data))
                   (newline-and-indent)
                   (insert (assoc-default 'description data))
+                  (newline-and-indent)
+                  (insert "#+end_preview")
                   (newline-and-indent)))
       :complete (lambda (&rest _) (message "Finished!"))
       :error
