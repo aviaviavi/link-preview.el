@@ -4,11 +4,11 @@
 ;; Author: Avi Press <mail@avi.press>
 ;; Version: 1.0
 ;; URL: https://github.com/aviaviavi/link-preview.el
-;; Package-Requires: ((request "20210816.200"))
+;; Package-Requires: ((request "0.3.2"))
 
 ;;; Commentary:
 
-;; Full documentation is available as an Info manual.
+;; This somewhat hacky code can be polished if it proves useful enough to people
 
 ;;; Code:
 
@@ -34,9 +34,13 @@
                   (message "%S" (assoc-default 'description data))
                   (end-of-line)
                   (forward-line 1)
+                  (insert "#+begin_preview")
+                  (newline-and-indent)
                   (insert (assoc-default 'title data))
                   (newline-and-indent)
                   (insert (assoc-default 'description data))
+                  (newline-and-indent)
+                  (insert "#+end_preview")
                   (newline-and-indent)))
       :complete (lambda (&rest _) (message "Finished!"))
       :error
