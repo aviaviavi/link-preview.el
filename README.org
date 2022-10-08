@@ -9,6 +9,13 @@ To use:
 3. Run ~(link-preview-insert)~
 4. OG title and description will be inserted below
 
+* Demo
+
+- Example link to expand: https://twitter.com/avi_press/status/1576002073694306304
+#+begin_preview
+Tweet by @Avi Press
+I wish I could paste a link into emacs and see the link preview as if it was in Notion or similar
+#+end_preview
 
 #+CAPTION: Demo tweet expansion
-[[https://i.imgur.com/Wljmh4u.gif]]
+[[https://i.imgur.com/13NVMRe.gif]]
