@@ -42,7 +42,9 @@
                   (newline-and-indent)
                   (insert "#+end_preview")
                   (newline-and-indent)))
-      :complete (lambda (&rest _) (message "Finished!"))
+      :complete (cl-function
+                 (lambda (&key response  &allow-other-keys)
+                 (message "Complete: %s" (request-response-status-code response))))
       :error
       (cl-function (lambda (&rest args &key error-thrown &allow-other-keys)
                      (message "Got error: %S" error-thrown))))))
